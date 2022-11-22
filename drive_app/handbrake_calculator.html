@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/drive_app/resources/styles/style.css" />
+    <script src="/drive_app/resources/scripts/navigation.js" defer></script>
+    <script
+      src="/drive_app/resources/scripts/handbrake_calculator.js"
+      defer
+    ></script>
+    <script src="/drive_app/resources/scripts/auth.js" defer></script>
+    <title>Handbrake Calculator</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- nav -->
+
+    <header class="header">
+      <nav class="navbar">
+        <button
+          class="menu-button"
+          aria-controls="navbar"
+          aria-expanded="false"
+          style="z-index: 999"
+        ></button>
+        <img
+          width="250"
+          height="50"
+          src="/clothing website/resources/images/we_failed_logo.png"
+          alt=""
+        />
+        <ul class="nav-menu" data-visible="false" aria-controls="navbar">
+          <li class="menu-items items-hover">
+            <a href="/drive_app/index.html">Home</a>
+          </li>
+          <li class="menu-items sub-menu">
+            <a href="#">Toolbox</a>
+            <!-- sub menu -->
+            <div class="dropdown">
+              <ul class="sub-menu sub-menu-dropdown">
+                <li class="submenu-items">
+                  <a href="/drive_app/loco_load_limit.html">Loco Load Limit</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/handbrake_calculator.html"
+                    >Handbrake Calculator</a
+                  >
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/brakestand_test.html">Brakestand Test</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/ecp_startup.html">ECP Startup</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-items"><a href="#">Contact Us</a></li>
+          <button type="submit" class="logout-btn">Log Out</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <fieldset class="calculator-container">
+        <form class="calculator-form" action="">
+          <label class="calc-label" for="num-of-wagons">Number of Wagons</label>
+
+          <input
+            id="num-of-wagons"
+            type="number"
+            name="num-of-wagons"
+            oninput="results()"
+          />
+          <label class="calc-label" for="select-grade">Select Grade</label>
+          <select name="select-grade" id="select-grade" onchange="results()">
+            <option value="" disabled selected>Select Grade</option>
+          </select>
+          <!-- results -->
+          <!-- <h3>Trailing Load Limit:</h3> -->
+          <label class="results-label" for="results"
+            >Number of Handbrakes Required:</label
+          >
+          <div id="results" class="results"></div>
+          <div id="note" class="note"></div>
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>

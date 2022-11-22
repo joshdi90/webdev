@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/drive_app/resources/styles/style.css" />
+    <script src="/drive_app/resources/scripts/navigation.js" defer></script>
+    <script src="/drive_app/resources/scripts/auth.js" defer></script>
+    <title>Loco Load Limit</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- nav -->
+
+    <header class="header">
+      <nav class="navbar">
+        <button
+          class="menu-button"
+          aria-controls="navbar"
+          aria-expanded="false"
+          style="z-index: 999"
+        ></button>
+        <img
+          width="250"
+          height="50"
+          src="/clothing website/resources/images/we_failed_logo.png"
+          alt=""
+        />
+        <ul class="nav-menu" data-visible="false" aria-controls="navbar">
+          <li class="menu-items items-hover">
+            <a href="/drive_app/index.html">Home</a>
+          </li>
+          <li class="menu-items sub-menu">
+            <a href="#">Toolbox</a>
+            <!-- sub menu -->
+            <div class="dropdown">
+              <ul class="sub-menu sub-menu-dropdown">
+                <li class="submenu-items">
+                  <a href="/drive_app/loco_load_limit.html">Loco Load Limit</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/handbrake_calculator.html"
+                    >Handbrake Calculator</a
+                  >
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/brakestand_test.html">Brakestand Test</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/ecp_startup.html">ECP Startup</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-items"><a href="#">Contact Us</a></li>
+          <button type="button" class="logout-btn">Log Out</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <form class="loco-load-limit-container" action="loco-load-limit">
+          <fieldset class="loco-load-limit">
+            <!-- loco class -->
+            <label for="loco-type">Locomotive Class</label>
+            <select name="loco-type" id="loco-type" onchange="results()">
+              <option value="" disabled selected>Select Locomotive</option>
+            </select>
+            <!-- number of locos -->
+            <label for="number-of-locos">Number of Locos</label>
+            <select
+              name="number-of-locos"
+              id="number-of-locos"
+              onchange="results()"
+            >
+              <option value="" disabled selected>
+                Selecet Number of Locos
+              </option>
+            </select>
+            <!-- ruling grade -->
+            <label for="ruling-grade">Ruling Grade</label>
+            <select name="ruling-grade" id="ruling-grade" onchange="results()">
+              <option value="" disabled selected>Choose ruling grade</option>
+            </select>
+            <!-- results -->
+            <h3>Trailing Load Limit:</h3>
+            <div id="results" class="results"></div>
+            <div id="note" class="note"></div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="/drive_app/resources/scripts/loco_load_limit.js" defer></script>
+</html>

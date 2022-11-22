@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/drive_app/resources/styles/style.css" />
+    <script src="/drive_app/resources/scripts/navigation.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- nav -->
+
+    <header class="header">
+      <nav class="navbar">
+        <button
+          class="menu-button"
+          aria-controls="navbar"
+          aria-expanded="false"
+          style="z-index: 999"
+        ></button>
+        <img
+          width="250"
+          height="50"
+          src="/clothing website/resources/images/we_failed_logo.png"
+          alt=""
+        />
+        <ul class="nav-menu" data-visible="false" aria-controls="navbar">
+          <li class="menu-items items-hover">
+            <a href="/drive_app/index.html">Home</a>
+          </li>
+          <li class="menu-items sub-menu">
+            <a href="#">Toolbox</a>
+            <!-- sub menu -->
+            <div class="dropdown">
+              <ul class="sub-menu sub-menu-dropdown">
+                <li class="submenu-items">
+                  <a href="/drive_app/loco_load_limit.html">Loco Load Limit</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/handbrake_calculator.html"
+                    >Handbrake Calculator</a
+                  >
+                </li>
+                <li class="submenu-items">
+                  <a href="/drive_app/brakestand_test.html">Brakestand Test</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-items"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="brakestand-main-container">
+      <section class="main-section-container">
+        <article class="brakestand-test">
+          <h2 class="brakestand-heading">Conduct a Brake Stand Test</h2>
+          <ol class="brakestand-article" type="1">
+            <li>Apply park brake.</li>
+            <li>Set loco to Lead - Cut in.</li>
+            <li>
+              Recover start up penalty if applied. Apply Independent, release
+              Automatic Brake.
+            </li>
+            <li>
+              Check gauges (brake cyl approx. 560kpa, BP & ER approx. 500kpa, MR
+              750/850kpa, Flow 0.)
+            </li>
+            <li>Release Independent Brake (do not depress, BC drops to 0)</li>
+            <li>
+              Apply Automatic Brake to the minimum service position. (BP & ER
+              approx. 450kpa. BC rises to approx. 130kpa)
+            </li>
+            <li>
+              Make a further Automatic Brake reduction to 430kpa. (Note BC rises
+              further)
+            </li>
+            <li>
+              Bail off the Independent Brake. (BC goes to 0 in approx. 10 secs.)
+            </li>
+            <li>
+              Cut out Automatic Brake only and monitor ‘flow’ and BP for 1
+              minute (BP must not drop more than 21kpa in 1 minute)
+            </li>
+            <li>
+              Cut in Automatic Brake. Apply to the full-service position. (Note
+              BP drop and BC rise)
+            </li>
+            <li>
+              Slightly open the drivers and co/drivers emergency cocks in turn.
+              BP drops to approx. 330kpa and flow rate is at approx. 1000.
+              (Tests maintaining feature and ensures emergency cocks are
+              unobstructed.) Close emergency cock.
+            </li>
+            <li>
+              Move the Automatic Brake handle to Emergency. (BP & ER = 0, BC
+              =350kpa, initiates sanding, PCS open) Go to release after recovery
+              countdown.
+            </li>
+            <li>
+              Ensure Independent and Automatic Brakes are fully released. Wait
+              for VC to initiate an Emergency application. Recover Emergency
+              application. Go to release after recovery countdown.
+            </li>
+            <li>
+              Apply Automatic Brake to full service. Place reverser into forward
+              position, Gen field switch on. Move Dyn Brake handle to ‘setup’
+              then notch slowly through to at least notch 4. (Observe DB setup
+              and notch indications in loco monitor. Note: Engine revs in 5000cl
+              but not in 5020/6000cl beyond setup, BC reduces to 0.)
+            </li>
+            <li>
+              Apply Independent Brake. (BC rises). Release Independent Brake.
+              (Do not depress). (BC pressure 0kpa.) Set Dynamic Brake to setup
+              (with auto remaining in full service, BC pressure will rise to
+              350kpa.) 16. Go out of Dynamic. Centre reverser. (BC pressure
+              350kpa) 17. Apply Independent Brake, release the Automatic Brake
+              (BP & ER = 500kpa, BC = 560kpa)
+            </li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+  <script src="/drive_app/resources/scripts/loco_load_limit.js" defer></script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/drive_app/resources/styles/style.css" />
+    <script src="/drive_app/resources/scripts/navigation.js" defer></script>
+    <script src="/drive_app/resources/scripts/login_database.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- nav -->
+
+    <header class="header">
+      <nav class="navbar">
+        <button
+          class="menu-button"
+          aria-controls="navbar"
+          aria-expanded="false"
+          style="z-index: 999"
+        ></button>
+        <img
+          width="250"
+          height="50"
+          src="/clothing website/resources/images/we_failed_logo.png"
+          alt=""
+        />
+        <ul class="nav-menu" data-visible="false" aria-controls="navbar">
+          <li class="menu-items items-hover">
+            <a href="/drive_app/index.html">Home</a>
+          </li>
+
+          <li class="menu-items"><a href="#">Contact Us</a></li>
+          <button type="button" class="logout-btn">Log Out</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="login-container">
+        <form action="" class="login-form">
+          <label for="email" class="email-label">Email: <span>*</span></label>
+          <input type="email" name="email" id="email" class="email" required />
+          <br />
+          <label for="password" class="pass-label"
+            >Password: <span>*</span></label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password"
+            required
+          />
+          <br />
+          <button class="login-btn">Log In</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
